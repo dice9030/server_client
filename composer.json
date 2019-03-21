@@ -1,0 +1,19 @@
+{
+    "name": "cliente-web",
+    "description": "Cliente Web de OwlFiles que consulta directamente las APIs",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "klein/klein": "^2.1",
+        "firebase/php-jwt": "^5.0",        
+        "nesbot/carbon": "^1.25",
+         "twig/twig": "^2.4",
+        "curl/curl": "^1.9",
+        "vlucas/phpdotenv": "^2.5"
+    },
+    "autoload": {
+        "classmap": [           
+            "model/","model/down"
+        ]
+    }
+}

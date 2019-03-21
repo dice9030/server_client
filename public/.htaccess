@@ -1,0 +1,9 @@
+
+<IfModule mod_rewrite.c>
+    Options -Indexes
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L] 
+    RewriteRule ^sso/(.*)$ index.php?params=$1 [NC]
+    SetEnv TZ America/Lima
+</IfModule>
